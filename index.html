@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministerio de Hacienda. Gobierno de España.</title>
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <h1>Datos del ciudadano</h1>
+
+    <form>
+        <label for="dni"> Inserta DNI </label>
+        <input type="text" id="dni" name="dni" placeholder="Escribe aquí tu DNI"> <br>  
+
+        <label for="estadocivil"> Escribe tu estado civil </label>
+        <input type="text" id="estadocivil" name="estadocivil" placeholder="Escribe aquí tu estado civil"> <br>  
+             
+        <label for="ingresos"> Escribe tus ingresos </label>
+        <input type="text" id="ingresos" name="ingresos" placeholder="Escribe aquí tus ingresos">  <br> <br>
+
+        <button type="button" id="alta" onclick="darDeAlta()">Dar de Alta</button>
+        <button type="button" id="resumen" onclick="resumirDatosContribuyentes()">Resumen</button>
+        <button type="button" id="tributar" onclick="calcularImpuestos()">Tributar</button>
+        <button type="button" id="cita-previa" onclick="darCitaPrevia()">Cita Previa</button>
+    </form>
+
+
+    <br> <br>
+
+    <div id="mensaje"></div>
+    
+</body>
+</html>
